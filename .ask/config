@@ -1,31 +1,49 @@
 {
   "deploy_settings": {
-    "default": {
-      "skill_id": "amzn1.ask.skill.XXXXX",
+    "boobo94_dev": {
+      "skill_id": "amzn1.ask.skill.84dadac8-fa0a-4983-b829-0b2ea9d754ee",
       "was_cloned": false,
       "merge": {
         "manifest": {
           "apis": {
             "custom": {
               "endpoint": {
-                "uri": "arn:aws:lambda:eu-west-1:XXXXX:function:NAME"
+                "uri": "arn:aws:lambda:eu-west-1:301023501224:function:house-protector",
+
+              }
+            }
+          },
+          "publishingInformation": {
+            "locales": {
+              "en-US": {
+                "name": "House Protector"
               }
             }
           }
         }
       },
       "resources": {
-        "manifest": {
-          "eTag": "9a9cf7cc93901b7534766f025c9d726a"
-        },
         "lambda": [
           {
-            "arn": "arn:aws:lambda:eu-west-1:XXXXXX:function:NAME",
-            "revisionId": "b3c9fb94-a531-41e9-986e-0aebc332e4d3"
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "arn": "arn:aws:lambda:eu-west-1:301023501224:function:house-protector",
+            "awsRegion": "eu-west-1",
+            "functionName": "house-protector",
+            "handler": "index.handler",
+            "runtime": "nodejs8.10"
           }
-        ]
-      },
-      "in_skill_products": []
-    }
+        ],
+        "manifest": {
+          "eTag": "0182b00b308b5f226859fa31d886b309"
+        },
+        "interactionModel": {
+          "en-US": {
+            "eTag": "bbb84b181fbe9427148cc57a3993477a"
+          }
+        }
+      }
+    },
   }
 }

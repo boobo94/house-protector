@@ -1,8 +1,12 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "greeter",
+      "invocationName": "house protector",
       "intents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
         {
           "name": "AMAZON.CancelIntent",
           "samples": []
@@ -16,20 +20,19 @@
           "samples": []
         },
         {
-          "name": "HelloWorldIntent",
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "changeProfile",
           "slots": [],
           "samples": [
-            "how are you",
-            "hi",
-            "say hi world",
-            "say hi",
-            "hello",
-            "say hello world",
-            "say hello"
+            "change profile"
           ]
         }
       ],
       "types": []
     }
-  }
+  },
+  "version": "1"
 }
