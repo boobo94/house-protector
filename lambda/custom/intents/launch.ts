@@ -1,14 +1,20 @@
 import * as  Alexa from 'ask-sdk'
-import { GetRequestAttributes } from '../lib/helpers';
+import { GetRequestAttributes, GetSessionAttributes } from '../lib/helpers';
 import { RequestTypes } from '../lib/types';
+import { ProtectIntentHandler } from './protect-intent';
 
 export const LaunchRequestHandler: Alexa.RequestHandler = {
     canHandle(handlerInput) {
         return handlerInput.requestEnvelope.request.type === RequestTypes.Launch;
     },
     handle(handlerInput) {
+        const { firstTimeUser } = GetSessionAttributes(handlerInput);
+        if (!firstTimeUser) {
+            return ProtectIntentHandler.handle(handlerInput);
+        }
+
         const { t } = GetRequestAttributes(handlerInput)
-        const speechText = t("WELCOME_MSG")
+        let speechText = t("WELCOME_MSG")
 
         return handlerInput.responseBuilder
             .speak(speechText)
