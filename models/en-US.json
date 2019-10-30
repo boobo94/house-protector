@@ -24,15 +24,31 @@
           "samples": []
         },
         {
-          "name": "changeProfile",
+          "name": "configProfileIntent",
           "slots": [],
           "samples": [
             "change profile"
+          ]
+        },
+        {
+          "name": "configDogIntent",
+          "slots": [],
+          "samples": [
+            "change bark"
+          ]
+        },
+        {
+          "name": "protectIntent",
+          "slots": [],
+          "samples": [
+            "guard mode",
+            "protect",
+            "protect my house"
           ]
         }
       ],
       "types": []
     }
   },
-  "version": "1"
+  "version": "4"
 }
