@@ -9,6 +9,8 @@ export enum IntentTypes {
     No = "AMAZON.NoIntent",
     Pause = "AMAZON.PauseIntent",
 
+    ProtectIntent = "protectIntent",
+
 }
 
 export enum RequestTypes {
@@ -36,4 +38,26 @@ export type SlotValue = {
 export type SlotValues = {
     [key: string]: SlotValue | undefined;
 
+}
+
+export enum AudioPlayerIntentTypes {
+    Pause = "AMAZON.PauseIntent",
+    Resume = "AMAZON.ResumeIntent",
+    Next = "AMAZON.NextIntent",
+    Previous = "AMAZON.PreviousIntent",
+}
+
+export enum AudioPlayerControllerCommands {
+    Next = "PlaybackController.NextCommandIssued",
+    Previous = "PlaybackController.PreviousCommandIssued",
+    Pause = "PlaybackController.PauseCommandIssued",
+    Play = "PlaybackController.PlayCommandIssued",
+}
+
+export enum AudioPlayerPlaybackRequestTypes {
+    Failed = "AudioPlayer.PlaybackFailed",
+    Finished = "AudioPlayer.PlaybackFinished",
+    NearlyFinished = "AudioPlayer.PlaybackNearlyFinished",
+    Started = "AudioPlayer.PlaybackStarted",
+    Stopped = "AudioPlayer.PlaybackStopped",
 }
