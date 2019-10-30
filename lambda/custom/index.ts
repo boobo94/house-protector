@@ -14,10 +14,9 @@ export const handler = SkillBuilders.custom()
         Intents.SessionEnded,
         Intents.Fallback,
 
-         // custom
-        Intents.HelloWorldIntentHandler,
+        // custom
+        Intents.ProtectIntentHandler,
 
-        // custom intents
     )
     .addErrorHandlers(
         Errors.Unknown,
