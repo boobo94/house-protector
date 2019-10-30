@@ -1,4 +1,4 @@
-[![BCH compliance](https://bettercodehub.com/edge/badge/boobo94/alexa-skill-starter-pack-typescript?branch=master)](https://bettercodehub.com/)
+[![BCH compliance](https://bettercodehub.com/edge/badge/boobo94/house-protector?branch=master&token=df6b271c3e26d2862fe782d68be87f58747f8663)](https://bettercodehub.com/)
 
 # AWS Lambda in TypeScript
 
