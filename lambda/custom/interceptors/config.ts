@@ -16,12 +16,12 @@ function Config(): Config {
             case EnvironmentTypes.Production:
                 return {
                     version: "0.11",
-                    dynamoDbTableName: "greetings-db",
+                    dynamoDbTableName: "house-protector",
                 };
             default:
                 return {
                     version: "0.11",
-                    dynamoDbTableName: "greetings-deb-dev",
+                    dynamoDbTableName: "house-protector-dev",
                 };
         }
     }
