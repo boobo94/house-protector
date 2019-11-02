@@ -40,3 +40,8 @@ export interface PersistentAttributes {
     nextStreamEnqueued: boolean;
   };
 }
+
+export interface AudioType {
+  token: string;
+  url: string;
+}
