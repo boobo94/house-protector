@@ -1,6 +1,8 @@
 import { HandlerInput } from "ask-sdk-core";
 import { Response } from 'ask-sdk-model';
 import { AudioType } from "../interfaces";
+import { sounds } from "./sounds";
+import { SoundTokens } from "./interfaces";
 
 export class AudioController {
 
@@ -43,18 +45,19 @@ export class AudioController {
   }
 
   public playNext(handlerInput: HandlerInput, soundToken: string): Response {
+    // todo: get user selection
+    const favoriteProfile = '';
+    // todo: get user selection
+    const favoriteDog = '';
+    const nextSound = this.findNextSound(soundToken, favoriteProfile, favoriteDog);
 
+    // if the token is undefined, means the skill just started
     if (!soundToken) {
-      // if the token is undefined, means the skill just started
       // play an initial sound
-      // todo: implement this
-      // return this.play(handlerInput, nextsound)
+      return this.play(handlerInput, nextSound);
     }
 
-    // todo: get the next song
-    // todo: create a function which do that
-    // return this.enqueue(handlerInput, sound, soundToken)
-
+    return this.enqueue(handlerInput, nextSound, soundToken)
   }
 
   /**
@@ -77,6 +80,42 @@ export class AudioController {
    */
   public resume(handlerInput: HandlerInput, soundToken: string): Response {
     return this.playNext(handlerInput, soundToken);
+  }
+
+  /**
+   * Get the next sound to be played based on user preferences
+   * @param token The previous token of played sound
+   * @param favoriteProfile The profile type of user
+   * @param favoriteDog The favorite dog selected by user
+   */
+  private findNextSound(token: string, favoriteProfile: string, favoriteDog: string): AudioType {
+    const currentSoundTokenType = token.split('_')[0];
+
+    switch (currentSoundTokenType) {
+      case SoundTokens.BARKS:
+        return this.getOneSoundRandomly(sounds.pauses.generalBarks);
+      case SoundTokens.PAUSE_GENERAL_BARKS:
+        return this.getOneSoundRandomly(sounds.profiles[favoriteProfile]);
+      case SoundTokens.PROFILES:
+        return this.getOneSoundRandomly(sounds.pauses.generalProfiles);
+      case SoundTokens.PAUSE_GENERAL_PROFILES:
+      case SoundTokens.PAUSE_INITIAL:
+        return this.getOneSoundRandomly(sounds.barks[favoriteDog]);
+      case SoundTokens.INITIAL:
+        return this.getOneSoundRandomly(sounds.pauses.initial);
+      default:
+        return this.getOneSoundRandomly(sounds.initial);
+    }
+
+  }
+
+  /**
+   * Get one sound from an array passed
+   * @param items Array of sounds
+   */
+  private getOneSoundRandomly(items: AudioType[]): AudioType {
+    const index = Math.floor(Math.random() * items.length);
+    return items[index];
   }
 
 }

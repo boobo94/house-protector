@@ -1,6 +1,13 @@
 import { AudioType } from "../interfaces";
 
+const pauses: AudioType[] = [
+
+];
+
 export const sounds = {
+  initial: [
+
+  ] as AudioType[],
   barks: {
     labrador: [
 
@@ -30,6 +37,8 @@ export const sounds = {
   pauses: {
     initial: [] as AudioType[],
 
-    general: [] as AudioType[],
+    generalBarks: pauses,
+    generalProfiles: pauses,
+
   }
 }
