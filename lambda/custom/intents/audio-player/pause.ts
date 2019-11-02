@@ -4,7 +4,6 @@ import { AudioSkillController } from "../../lib/sounds-manager";
 import {
   IsIntent,
   IsType,
-  GetPersistentAttributes,
 } from "../../lib/helpers";
 import {
   AudioPlayerIntentTypes,
@@ -17,8 +16,6 @@ export const PauseIntentHandler: RequestHandler = {
       || IsType(handlerInput, AudioPlayerControllerCommands.Pause);
   },
   async handle(handlerInput) {
-    const { playbackInfo } = await GetPersistentAttributes(handlerInput);
-
-    return AudioSkillController.pause(handlerInput, playbackInfo.token);
+    return AudioSkillController.stop(handlerInput);
   }
 };
