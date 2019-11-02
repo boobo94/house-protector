@@ -15,6 +15,14 @@ export const handler = SkillBuilders.custom()
     Intents.SessionEnded,
     Intents.Fallback,
 
+    // audio-player
+    Intents.NextIntentHandler,
+    Intents.PreviousIntentHandler,
+    Intents.PauseIntentHandler,
+    Intents.ResumeIntentHandler,
+
+    // audio-player playback
+
     // custom
     Intents.ProtectIntentHandler,
 
