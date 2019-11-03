@@ -1,8 +1,11 @@
 import { HandlerInput } from "ask-sdk-core";
 import { Response } from 'ask-sdk-model';
-import { AudioType } from "../interfaces";
 import { sounds } from "./sounds";
 import { SoundTokens } from "./interfaces";
+import {
+  AudioType,
+  PersistentAttributes,
+} from "../interfaces";
 
 export class AudioController {
 
@@ -44,11 +47,9 @@ export class AudioController {
       .getResponse();
   }
 
-  public playNext(handlerInput: HandlerInput, soundToken: string): Response {
-    // todo: get user selection
-    const favoriteProfile = '';
-    // todo: get user selection
-    const favoriteDog = '';
+  public playNext(handlerInput: HandlerInput, persistentAttributes: PersistentAttributes): Response {
+    const { favoriteProfile, favoriteDog, playbackInfo } = persistentAttributes;
+    const soundToken = playbackInfo.token;
     const nextSound = this.findNextSound(soundToken, favoriteProfile, favoriteDog);
 
     // if the token is undefined, means the skill just started
@@ -65,10 +66,10 @@ export class AudioController {
    * The user must see an interaction, but doesn't care which is the next one
    * The skill is not an audio player
    * @param handlerInput
-   * @param soundToken
+   * @param persistentAttributes
    */
-  public playPrevious(handlerInput: HandlerInput, soundToken: string): Response {
-    return this.playNext(handlerInput, soundToken);
+  public playPrevious(handlerInput: HandlerInput, persistentAttributes: PersistentAttributes): Response {
+    return this.playNext(handlerInput, persistentAttributes);
   }
 
   /**
@@ -76,10 +77,10 @@ export class AudioController {
    * The user must see an interaction, but doesn't care which is the next one
    * The skill is not an audio player
    * @param handlerInput
-   * @param soundToken
+   * @param persistentAttributes
    */
-  public resume(handlerInput: HandlerInput, soundToken: string): Response {
-    return this.playNext(handlerInput, soundToken);
+  public resume(handlerInput: HandlerInput, persistentAttributes: PersistentAttributes): Response {
+    return this.playNext(handlerInput, persistentAttributes);
   }
 
   /**

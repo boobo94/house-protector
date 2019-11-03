@@ -28,11 +28,11 @@ export const sounds = {
   profiles: {
     default: [] as AudioType[],
 
-    bathroom: [] as AudioType[],
+    bedroom: [] as AudioType[],
 
     kitchen: [] as AudioType[],
 
-    livingroom: [] as AudioType[],
+    living: [] as AudioType[],
   },
   pauses: {
     initial: [] as AudioType[],
