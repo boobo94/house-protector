@@ -16,8 +16,8 @@ export const PreviousIntentHandler: RequestHandler = {
       || IsType(handlerInput, AudioPlayerControllerCommands.Previous);
   },
   async handle(handlerInput) {
-    const { playbackInfo } = await GetPersistentAttributes(handlerInput);
+    const persistentAttributes = await GetPersistentAttributes(handlerInput);
 
-    return AudioSkillController.playPrevious(handlerInput, playbackInfo.token);
+    return AudioSkillController.playNext(handlerInput, persistentAttributes);
   }
 }
