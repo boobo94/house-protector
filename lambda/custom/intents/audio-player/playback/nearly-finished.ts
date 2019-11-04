@@ -12,6 +12,6 @@ export const AudioPlayerPlaybackNearlyFinishedHandler: RequestHandler = {
 
     persistentAttributes.playbackInfo.nextStreamEnqueued = true;
 
-    return AudioSkillController.playNext(handlerInput, persistentAttributes.playbackInfo.token);
+    return AudioSkillController.playNext(handlerInput, persistentAttributes);
   }
 }

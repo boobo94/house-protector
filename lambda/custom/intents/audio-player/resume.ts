@@ -17,8 +17,8 @@ export const ResumeIntentHandler: RequestHandler = {
       || IsType(handlerInput, AudioPlayerControllerCommands.Play);
   },
   async handle(handlerInput) {
-    const { playbackInfo } = await GetPersistentAttributes(handlerInput);
+    const persistentAttributes = await GetPersistentAttributes(handlerInput);
 
-    return AudioSkillController.resume(handlerInput, playbackInfo.token);
+    return AudioSkillController.playNext(handlerInput, persistentAttributes);
   }
 }

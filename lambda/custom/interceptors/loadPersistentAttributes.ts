@@ -1,6 +1,6 @@
 import { RequestInterceptor } from "ask-sdk-core";
 import { GetPersistentAttributes, GetSessionAttributes } from "../lib/helpers";
-import { PersistentAttributes } from '../lib/interfaces';
+import { PersistentAttributes, ProfileType, DogType } from '../lib/interfaces';
 import { config } from "./config";
 
 
@@ -14,6 +14,8 @@ export const LoadPersistentAttributes: RequestInterceptor = {
     if (!hasPersistentAttributes || persistentAttributes.version !== config.version) {
       handlerInput.attributesManager.setPersistentAttributes({
         version: config.version,
+        favoriteProfile: ProfileType.DEFAULT,
+        favoriteDog: DogType.DOBERMAN,
         // Add here any extra attributes
       } as PersistentAttributes);
     }

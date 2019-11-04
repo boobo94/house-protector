@@ -11,8 +11,8 @@ export const ProtectIntentHandler: Alexa.RequestHandler = {
     return IsIntent(handlerInput, IntentTypes.ProtectIntent);
   },
   async handle(handlerInput) {
-    const { playbackInfo } = await GetPersistentAttributes(handlerInput);
+    const persistentAttributes = await GetPersistentAttributes(handlerInput);
 
-    return AudioSkillController.playNext(handlerInput, playbackInfo.token);
+    return AudioSkillController.playNext(handlerInput, persistentAttributes);
   }
 };

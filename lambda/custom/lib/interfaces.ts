@@ -26,6 +26,16 @@ export interface PersistentAttributes {
   version: string;
 
   /**
+   * The room selected by user
+   */
+  favoriteProfile: ProfileType;
+
+  /**
+   * The dog selected by user
+   */
+  favoriteDog: DogType;
+
+  /**
     * Playback details.
     */
   playbackInfo: {
@@ -45,3 +55,18 @@ export interface AudioType {
   token: string;
   url: string;
 }
+
+export enum ProfileType {
+  DEFAULT = 'default',
+  KITCHEN = 'kitchen',
+  BEDROOM = 'bedroom',
+  LIVING = 'living',
+}
+
+export enum DogType {
+  LABRADOR = 'labrador',
+  DOBERMAN = 'doberman',
+  SMALL = 'small',
+  GERMAN_SHEPARD = 'germanShepard',
+}
+
