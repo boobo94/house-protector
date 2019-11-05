@@ -10,6 +10,8 @@ export enum IntentTypes {
   Pause = "AMAZON.PauseIntent",
 
   ProtectIntent = "protectIntent",
+  ChangeDogIntent = "changeDogIntent",
+  ConfigDogConfirmationIntent = "configDogConfirmationIntent",
 
 }
 
@@ -20,12 +22,15 @@ export enum RequestTypes {
 }
 
 export enum States {
+  ConfigDog = "configDog",
+  ConfigProfile = "configProfile",
 }
 
 export enum Errors {
 }
 
 export enum SlotTypes {
+  Dog = 'dog',
 }
 
 export type SlotValue = {

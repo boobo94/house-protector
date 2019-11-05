@@ -1,0 +1,24 @@
+import * as  Alexa from 'ask-sdk';
+import {
+  IsIntent,
+  GetPersistentAttributes,
+  GetRequestAttributes,
+} from '../../lib/helpers';
+import { IntentTypes } from '../../lib/types';
+
+export const ConfigDogConfirmationIntentHandler: Alexa.RequestHandler = {
+  canHandle(handlerInput) {
+    return IsIntent(handlerInput, IntentTypes.ConfigDogConfirmationIntent);
+  },
+  async handle(handlerInput) {
+    const { t } = GetRequestAttributes(handlerInput);
+    const { favoriteDog } = await GetPersistentAttributes(handlerInput);
+
+    const speechText = t("CONFIG_DOG_CONFIRMATION", favoriteDog);
+    return handlerInput.responseBuilder
+      .speak(speechText)
+      .reprompt(speechText)
+      .withSimpleCard(t('SKILL_NAME'), speechText)
+      .getResponse();
+  }
+};
