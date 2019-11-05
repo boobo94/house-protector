@@ -5,6 +5,7 @@ import {
   GetRequestAttributes,
 } from '../../lib/helpers';
 import { IntentTypes } from '../../lib/types';
+import { TranslationsKeys } from '../../locales/translations';
 
 export const ConfigDogConfirmationIntentHandler: Alexa.RequestHandler = {
   canHandle(handlerInput) {
@@ -14,11 +15,11 @@ export const ConfigDogConfirmationIntentHandler: Alexa.RequestHandler = {
     const { t } = GetRequestAttributes(handlerInput);
     const { favoriteDog } = await GetPersistentAttributes(handlerInput);
 
-    const speechText = t("CONFIG_DOG_CONFIRMATION", favoriteDog);
+    const speechText = t(TranslationsKeys.CONFIG_DOG_CONFIRMATION, favoriteDog);
     return handlerInput.responseBuilder
       .speak(speechText)
       .reprompt(speechText)
-      .withSimpleCard(t('SKILL_NAME'), speechText)
+      .withSimpleCard(t(TranslationsKeys.SKILL_NAME), speechText)
       .getResponse();
   }
 };
