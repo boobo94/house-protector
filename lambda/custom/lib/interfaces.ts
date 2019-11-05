@@ -67,6 +67,6 @@ export enum DogType {
   LABRADOR = 'labrador',
   DOBERMAN = 'doberman',
   SMALL = 'small',
-  GERMAN_SHEPARD = 'germanShepard',
+  GERMAN_SHEPARD = 'german shepard',
 }
 

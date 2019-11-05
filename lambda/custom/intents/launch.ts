@@ -2,6 +2,7 @@ import * as  Alexa from 'ask-sdk'
 import { GetRequestAttributes, GetSessionAttributes } from '../lib/helpers';
 import { RequestTypes } from '../lib/types';
 import { ProtectIntentHandler } from './protect-intent';
+import { TranslationsKeys } from '../locales/translations';
 
 export const LaunchRequestHandler: Alexa.RequestHandler = {
   canHandle(handlerInput) {
@@ -14,7 +15,7 @@ export const LaunchRequestHandler: Alexa.RequestHandler = {
     }
 
     const { t } = GetRequestAttributes(handlerInput)
-    let speechText = `${t('WELCOME_MSG')} ${t('HELP')}`;
+    let speechText = `${t(TranslationsKeys.WELCOME)} ${t(TranslationsKeys.HELP)}`;
 
     return handlerInput.responseBuilder
       .speak(speechText)

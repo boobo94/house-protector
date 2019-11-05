@@ -6,3 +6,5 @@ export * from './session-end';
 export * from './fallback';
 export * from './protect-intent';
 export * from './audio-player';
+export * from './config-dog';
+export * from './config-profile'
