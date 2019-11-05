@@ -24,8 +24,8 @@ export enum RequestTypes {
 }
 
 export enum States {
-  ConfigDog = "configDog",
-  ConfigProfile = "configProfile",
+  None = '',
+  Protect = 'protect'
 }
 
 export enum Errors {
