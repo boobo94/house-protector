@@ -131,5 +131,5 @@ export function GetOffset(handlerInput: HandlerInput): number {
  * @param {object} handlerInput
  */
 export function GetToken(handlerInput: HandlerInput): string {
-  return (handlerInput.requestEnvelope.request as any).offsetInMilliseconds;
+  return (handlerInput.requestEnvelope.request as any).token;
 }
