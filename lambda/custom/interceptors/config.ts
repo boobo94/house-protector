@@ -20,7 +20,7 @@ function Config(): Config {
         };
       default:
         return {
-          version: "0.12",
+          version: "0.24",
           dynamoDbTableName: "house-protector-dev",
         };
     }

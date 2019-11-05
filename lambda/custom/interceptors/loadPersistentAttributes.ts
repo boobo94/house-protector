@@ -16,6 +16,11 @@ export const LoadPersistentAttributes: RequestInterceptor = {
         version: config.version,
         favoriteProfile: ProfileType.DEFAULT,
         favoriteDog: DogType.DOBERMAN,
+        playbackInfo: {
+          token: '',
+          offsetInMilliseconds: 0,
+          nextStreamEnqueued: false,
+        },
         // Add here any extra attributes
       } as PersistentAttributes);
     }
