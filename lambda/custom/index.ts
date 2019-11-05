@@ -33,6 +33,8 @@ export const handler = SkillBuilders.custom()
     Intents.ProtectIntentHandler,
     Intents.ConfigDogConfirmationIntentHandler,
     Intents.ChangeDogIntentHandler,
+    Intents.ConfigProfileConfirmationIntentHandler,
+    Intents.ChangeProfileIntentHandler,
 
   )
   .addErrorHandlers(

@@ -13,6 +13,8 @@ export enum IntentTypes {
   ChangeDogIntent = "changeDogIntent",
   ConfigDogConfirmationIntent = "configDogConfirmationIntent",
 
+  ChangeProfileIntent = "changeProfileIntent",
+  ConfigProfileConfirmationIntent = "configProfileConfirmationIntent",
 }
 
 export enum RequestTypes {
@@ -31,6 +33,7 @@ export enum Errors {
 
 export enum SlotTypes {
   Dog = 'dog',
+  Profile = 'profile',
 }
 
 export type SlotValue = {
