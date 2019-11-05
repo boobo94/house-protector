@@ -24,15 +24,115 @@
           "samples": []
         },
         {
-          "name": "changeProfile",
+          "name": "changeProfileIntent",
+          "slots": [
+            {
+              "name": "profile",
+              "type": "Profile"
+            }
+          ],
+          "samples": [
+            "{profile}"
+          ]
+        },
+        {
+          "name": "changeDogIntent",
+          "slots": [
+            {
+              "name": "dog",
+              "type": "Dog"
+            }
+          ],
+          "samples": [
+            "{dog}"
+          ]
+        },
+        {
+          "name": "protectIntent",
           "slots": [],
           "samples": [
+            "guard mode",
+            "protect",
+            "protect my house"
+          ]
+        },
+        {
+          "name": "configDogConfirmationIntent",
+          "slots": [],
+          "samples": [
+            "my dog",
+            "change dog"
+          ]
+        },
+        {
+          "name": "configProfileConfirmationIntent",
+          "slots": [],
+          "samples": [
+            "my profile",
             "change profile"
           ]
         }
       ],
-      "types": []
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "german shepard",
+                "synonyms": [
+                  "shepard",
+                  "german"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "small"
+              }
+            },
+            {
+              "name": {
+                "value": "doberman"
+              }
+            },
+            {
+              "name": {
+                "value": "labrador"
+              }
+            }
+          ],
+          "name": "Dog"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "living",
+                "synonyms": [
+                  "living room"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "bedroom"
+              }
+            },
+            {
+              "name": {
+                "value": "kitchen"
+              }
+            },
+            {
+              "name": {
+                "value": "default"
+              }
+            }
+          ],
+          "name": "Profile"
+        }
+      ]
     }
   },
-  "version": "1"
+  "version": "6"
 }
