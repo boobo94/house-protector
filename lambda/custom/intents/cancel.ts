@@ -1,19 +1,19 @@
 import { RequestHandler } from "ask-sdk";
-import { GetRequestAttributes, IsIntent } from '../lib/helpers';
-import { IntentTypes } from "../lib/types";
-import { TranslationsKeys } from "../locales/translations";
+import { IsIntent, GetSessionAttributes } from '../lib/helpers';
+import { IntentTypes, States } from "../lib/types";
 
 export const CancelIntentHandler: RequestHandler = {
   canHandle(handlerInput) {
-    return IsIntent(handlerInput, IntentTypes.Cancel);
-  },
-  handle(handlerInput) {
-    const { t } = GetRequestAttributes(handlerInput)
-    const speechText = t(TranslationsKeys.GOODBYE)
+    if (!handlerInput.requestEnvelope.session)
+      return false
 
+    const { state } = GetSessionAttributes(handlerInput)
+
+    return IsIntent(handlerInput, IntentTypes.Stop, IntentTypes.Cancel) && (state === States.Protect);
+  },
+  async handle(handlerInput) {
     return handlerInput.responseBuilder
-      .speak(speechText)
       .withShouldEndSession(true)
-      .getResponse();
+      .getResponse()
   }
 };
