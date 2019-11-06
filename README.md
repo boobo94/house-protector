@@ -105,7 +105,7 @@ Frequently used `npm script`s:
 
 # How to convert audio files
 
-Amazon requests the sounds in a special format to be played on its devices. You can find a tool [here](https://www.jovo.tech/audio-converter) which helps you to convert your files.
+Amazon requests the sounds in a [special format](https://developer.amazon.com/docs/custom-skills/speech-synthesis-markup-language-ssml-reference.html#audio) to be played on its devices. You can find a tool [here](https://www.jovo.tech/audio-converter) which helps you to convert your files.
 
 
 ## Resources
