@@ -36,7 +36,7 @@ Use npm to install ASK CLI. If you already have ASK CLI installed and want to up
 
 After you install ask-cli, initialize ASK CLI:
 
-`$ ask init`  
+`$ ask init`
 
 You will be prompted to name your profile (default by default), choose the AWS profile to use, and to log in to your Amazon developer account. Once the initialization is complete, you can use ASK CLI to manage your skill.
 
@@ -103,6 +103,9 @@ Frequently used `npm script`s:
 | `sync:model`       | Sync the model from Alexa Skill Console with local model from models folder         |
 
 
+# How to convert audio files
+
+Amazon requests the sounds in a special format to be played on its devices. You can find a tool [here](https://www.jovo.tech/audio-converter) which helps you to convert your files.
 
 
 ## Resources
