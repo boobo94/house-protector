@@ -2,6 +2,7 @@
 export enum TranslationsKeys {
   SKILL_NAME = 'SKILL_NAME',
   WELCOME = 'WELCOME',
+  WELCOME_SHORT = 'WELCOME_SHORT',
   GOODBYE = 'GOODBYE',
   HELP = 'HELP',
   GENERAL_ERROR = 'GENERAL_ERROR',
@@ -15,6 +16,7 @@ export const locales = {
     translation: {
       [TranslationsKeys.SKILL_NAME]: "House Protector",
       [TranslationsKeys.WELCOME]: "Welcome to House Protector.",
+      [TranslationsKeys.WELCOME_SHORT]: "Welcome to House Protector. I can help you to change your favorite dog, room profile or protect your home. What can I do for you?",
       [TranslationsKeys.GOODBYE]: "Goodbye!",
       [TranslationsKeys.HELP]: "House protector is a skill which aims to protect your home when you leave it. When you're leaving I'll play sounds for you. The room profiles available are: LIVING ROOM, KITCKEN, BEDROOM. Change them by simply ask to change the profile. The dog profiles availables are: LABRADOR, DOBERMAN, GERMAN SHEPARD. You can change the dog by asking to change the dog. What do want next?",
       [TranslationsKeys.GENERAL_ERROR]: "Sorry, I can't understand the command. Please say it again.",
