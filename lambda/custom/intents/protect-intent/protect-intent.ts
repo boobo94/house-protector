@@ -3,8 +3,9 @@ import { AudioSkillController } from '../../lib/sounds-manager';
 import {
   IsIntent,
   GetPersistentAttributes,
+  GetSessionAttributes,
 } from '../../lib/helpers';
-import { IntentTypes } from '../../lib/types';
+import { IntentTypes, States } from '../../lib/types';
 
 export const ProtectIntentHandler: Alexa.RequestHandler = {
   canHandle(handlerInput) {
@@ -12,6 +13,9 @@ export const ProtectIntentHandler: Alexa.RequestHandler = {
   },
   async handle(handlerInput) {
     const persistentAttributes = await GetPersistentAttributes(handlerInput);
+
+    const attributes = GetSessionAttributes(handlerInput);
+    attributes.state = States.Protect;
 
     return AudioSkillController.playNext(handlerInput, persistentAttributes);
   }

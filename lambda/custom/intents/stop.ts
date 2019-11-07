@@ -1,13 +1,13 @@
 import { RequestHandler } from "ask-sdk";
 import { IsIntent } from '../lib/helpers';
 import { IntentTypes } from "../lib/types";
-import { CancelIntentHandler } from "./cancel";
+import { AudioSkillController } from "../lib/sounds-manager";
 
-export const StopIntentHandler: RequestHandler = {
+export const StopAudioHandler: RequestHandler = {
   canHandle(handlerInput) {
-    return IsIntent(handlerInput, IntentTypes.Stop);
+    return IsIntent(handlerInput, IntentTypes.Stop, IntentTypes.Cancel);
   },
   handle(handlerInput) {
-    return CancelIntentHandler.handle(handlerInput);
+    return AudioSkillController.stop(handlerInput);
   }
 };

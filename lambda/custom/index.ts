@@ -11,7 +11,7 @@ export const handler = SkillBuilders.custom()
     Intents.LaunchRequestHandler,
     Intents.HelpIntentHandler,
     Intents.CancelIntentHandler,
-    Intents.StopIntentHandler,
+    Intents.StopAudioHandler,
     Intents.SessionEnded,
     Intents.Fallback,
 

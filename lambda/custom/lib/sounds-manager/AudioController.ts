@@ -90,7 +90,7 @@ export class AudioController {
    * @param favoriteDog The favorite dog selected by user
    */
   private findNextSound(token: string, favoriteProfile: string, favoriteDog: string): AudioType {
-    const currentSoundTokenType = token.split('_')[0];
+    const currentSoundTokenType = token && token.split('_')[0];
 
     switch (currentSoundTokenType) {
       case SoundTokens.BARKS:
