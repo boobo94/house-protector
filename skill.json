@@ -2,7 +2,9 @@
   "manifest": {
     "apis": {
       "custom": {
-        "endpoint": {},
+        "endpoint": {
+          "sourceDir": "dist/custom"
+        },
         "interfaces": [
           {
             "type": "AUDIO_PLAYER"
