@@ -119,36 +119,184 @@ export const sounds = {
   profiles: {
     default: [
       {
-        token: `${SoundTokens.BARKS}_default_1`,
+        token: `${SoundTokens.PROFILES}_default_1`,
         url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/profile-tv1.mp3'
-      }
+      },
+      {
+        token: `${SoundTokens.PROFILES}_default_2`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/footsteps1.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_default_3`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/keys1.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_default_4`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/keys2.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_default_5`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/talking1.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_default_6`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/tv2.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_default_7`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/keys3.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_default_8`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/phone-ringing1.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_default_9`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/creaking-door-spooky.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_default_10`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/talking2.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_default_11`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/ductape1.mp3'
+      },
     ] as AudioType[],
 
     bedroom: [
       {
-        token: `${SoundTokens.BARKS}_labrador_42`,
-        url: ''
-      }
+        token: `${SoundTokens.PROFILES}_bedroom_1`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/footsteps1.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_bedroom_2`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/creaking-door-spooky.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_bedroom_3`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/toilet-in-the-bathroom.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_bedroom_4`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/snoring1.mp3'
+      },
     ] as AudioType[],
 
     kitchen: [
       {
-        token: `${SoundTokens.BARKS}_labrador_46`,
-        url: ''
-      }
+        token: `${SoundTokens.PROFILES}_kitchen_1`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/footsteps1.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_kitchen_2`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/scratching-dishes1.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_kitchen_3`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/creaking-door-spooky.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_kitchen_4`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/ductape1.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_kitchen_5`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/cooking-steak-on-a-grill.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_kitchen_6`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/plastic-bag-crinkling.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_kitchen_7`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/metal-nails-falling.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_kitchen_8`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/glass-breaking.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_kitchen_9`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/chair-scraping-on-tiles.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_kitchen_10`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/metal-cup-dropping.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_kitchen_11`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/rubbing-plastic.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_kitchen_12`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/toothpicks-being-shaken.mp3'
+      },
     ] as AudioType[],
 
     living: [
       {
-        token: `${SoundTokens.BARKS}_living_1`,
+        token: `${SoundTokens.PROFILES}_living_1`,
         url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/profile-tv1.mp3'
-      }
+      },
+      {
+        token: `${SoundTokens.PROFILES}_living_2`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/footsteps1.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_living_3`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/keys1.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_living_4`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/keys2.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_living_5`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/talking1.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_living_6`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/tv2.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_living_7`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/keys3.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_living_8`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/phone-ringing1.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_living_9`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/creaking-door-spooky.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_living_10`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/talking2.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_living_11`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/ductape1.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_living_12`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/ball-against-wall.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_living_13`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/typing-computer1.mp3'
+      },
+      {
+        token: `${SoundTokens.PROFILES}_living_14`,
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/paper-thrown-in-the-air.mp3'
+      },
     ] as AudioType[],
   },
   pauses: {
     initial: [
       {
-        token: `${SoundTokens.BARKS}_silent_initial`,
+        token: `${SoundTokens.PAUSE_INITIAL}_silent_initial`,
         url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/pause-5s.mp3'
       }
     ] as AudioType[],
