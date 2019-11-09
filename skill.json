@@ -1,7 +1,14 @@
 {
   "manifest": {
     "apis": {
-      "custom": {}
+      "custom": {
+        "endpoint": {},
+        "interfaces": [
+          {
+            "type": "AUDIO_PLAYER"
+          }
+        ]
+      }
     },
     "manifestVersion": "1.0",
     "publishingInformation": {
