@@ -32,7 +32,7 @@
             "functionName": "house-protector",
             "handler": "index.handler",
             "runtime": "nodejs8.10",
-            "revisionId": "8ed2577c-9c4a-4eec-8582-6b8c5c39e2ee"
+            "revisionId": "2ca5c65c-a7c6-4945-a0eb-41b3c0437e4a"
           }
         ],
         "manifest": {},
