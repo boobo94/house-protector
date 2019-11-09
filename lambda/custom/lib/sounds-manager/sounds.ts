@@ -23,7 +23,7 @@ const getPauses = (token): AudioType[] => [
 export const sounds = {
   initial: [
     {
-      token: `${SoundTokens.BARKS}_initial_1`,
+      token: `${SoundTokens.INITIAL}_initial_1`,
       url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/tv2.mp3'
     }
   ] as AudioType[],
