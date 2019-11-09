@@ -14,6 +14,9 @@ export const ProtectIntentHandler: Alexa.RequestHandler = {
   async handle(handlerInput) {
     const persistentAttributes = await GetPersistentAttributes(handlerInput);
 
+    // reset token to start with the initial sound
+    persistentAttributes.playbackInfo.token = null;
+
     const attributes = GetSessionAttributes(handlerInput);
     attributes.state = States.Protect;
 
