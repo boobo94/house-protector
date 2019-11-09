@@ -24,7 +24,7 @@ export const sounds = {
   initial: [
     {
       token: `${SoundTokens.BARKS}_initial_1`,
-      url: ''
+      url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/tv2.mp3'
     }
   ] as AudioType[],
   barks: {
@@ -108,7 +108,7 @@ export const sounds = {
       },
       {
         token: `${SoundTokens.BARKS}_german-shepard_4`,
-        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/german-shephard-bark1.mp3'
+        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/german-shepard-bark1.mp3'
       },
       {
         token: `${SoundTokens.BARKS}_german-shepard_5`,
@@ -140,26 +140,22 @@ export const sounds = {
       },
       {
         token: `${SoundTokens.PROFILES}_default_6`,
-        url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/tv2.mp3'
-      },
-      {
-        token: `${SoundTokens.PROFILES}_default_7`,
         url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/keys3.mp3'
       },
       {
-        token: `${SoundTokens.PROFILES}_default_8`,
+        token: `${SoundTokens.PROFILES}_default_7`,
         url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/phone-ringing1.mp3'
       },
       {
-        token: `${SoundTokens.PROFILES}_default_9`,
+        token: `${SoundTokens.PROFILES}_default_8`,
         url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/creaking-door-spooky.mp3'
       },
       {
-        token: `${SoundTokens.PROFILES}_default_10`,
+        token: `${SoundTokens.PROFILES}_default_9`,
         url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/talking2.mp3'
       },
       {
-        token: `${SoundTokens.PROFILES}_default_11`,
+        token: `${SoundTokens.PROFILES}_default_10`,
         url: 'https://house-protector-alexa-skill.s3-eu-west-1.amazonaws.com/ductape1.mp3'
       },
     ] as AudioType[],
