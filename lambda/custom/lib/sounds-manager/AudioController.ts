@@ -47,6 +47,14 @@ export class AudioController {
       .getResponse();
   }
 
+  public playImmediately(handlerInput: HandlerInput, persistentAttributes: PersistentAttributes): Response {
+    const { favoriteProfile, favoriteDog, playbackInfo } = persistentAttributes;
+    const soundToken = playbackInfo.token;
+    const nextSound = this.findNextSound(soundToken, favoriteProfile, favoriteDog);
+
+    return this.play(handlerInput, nextSound);
+  }
+
   public playNext(handlerInput: HandlerInput, persistentAttributes: PersistentAttributes): Response {
     const { favoriteProfile, favoriteDog, playbackInfo } = persistentAttributes;
     const soundToken = playbackInfo.token;
