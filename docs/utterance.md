@@ -11,6 +11,7 @@ I (/want to) change profile (with/to) {profile}
 (/my) (/current/active/favorite) (profile/room)
 which is my (/current/active/favorite) (profile/room)
 I want to know (/which is) my (/current/active/favorite) (profile/room)
+tell me (about/which is) my (profile/room)
 
 # changeDogIntent
 
@@ -20,9 +21,10 @@ I (/want to) change dog (with/to) {dog}
 
 # configDogConfirmationIntent
 
-(/my) (/current/active/favorite) (dog)
-which is my (/current/active/favorite) (dog)
-I want to know (/which is) my (/current/active/favorite) (dog)
+(/my) (/current/active/favorite) dog
+which is my (/current/active/favorite) dog
+I want to know (/which is) my (/current/active/favorite) dog
+tell me (about/which is) my dog
 
 # protectIntent
 
