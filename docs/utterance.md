@@ -28,5 +28,5 @@ tell me (about/which is) my dog
 
 # protectIntent
 
-(defence/guard/protect) (/my) (house/home/living room/kitchen/bedroom)
-activate (defence/protect/guard) mode
+(defense/guard/protect) (/my) (house/home/living room/kitchen/bedroom)
+(start/open/activate) (defense/protect/guard) mode

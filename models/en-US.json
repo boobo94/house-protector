@@ -65,19 +65,19 @@
           "name": "protectIntent",
           "slots": [],
           "samples": [
-            "activate defence mode",
+            "activate defense mode",
             "activate guard mode",
             "activate protect mode",
-            "defence bedroom",
-            "defence home",
-            "defence house",
-            "defence kitchen",
-            "defence living room",
-            "defence my bedroom",
-            "defence my home",
-            "defence my house",
-            "defence my kitchen",
-            "defence my living room",
+            "defense bedroom",
+            "defense home",
+            "defense house",
+            "defense kitchen",
+            "defense living room",
+            "defense my bedroom",
+            "defense my home",
+            "defense my house",
+            "defense my kitchen",
+            "defense my living room",
             "guard bedroom",
             "guard home",
             "guard house",
@@ -88,6 +88,9 @@
             "guard my house",
             "guard my kitchen",
             "guard my living room",
+            "open defense mode",
+            "open guard mode",
+            "open protect mode",
             "protect bedroom",
             "protect home",
             "protect house",
@@ -97,7 +100,10 @@
             "protect my home",
             "protect my house",
             "protect my kitchen",
-            "protect my living room"
+            "protect my living room",
+            "start defense mode",
+            "start guard mode",
+            "start protect mode"
           ]
         },
         {
@@ -248,5 +254,5 @@
       ]
     }
   },
-  "version": "14"
+  "version": "15"
 }
