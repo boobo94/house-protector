@@ -11,7 +11,7 @@ export const LaunchRequestHandler: Alexa.RequestHandler = {
     const { t } = GetRequestAttributes(handlerInput);
     let speechText = t(TranslationsKeys.WELCOME_SHORT);
     const { firstTimeUser } = GetSessionAttributes(handlerInput);
-    if (!firstTimeUser) {
+    if (firstTimeUser) {
       speechText = `${t(TranslationsKeys.WELCOME)} ${t(TranslationsKeys.HELP)}`;
     }
 
