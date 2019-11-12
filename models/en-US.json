@@ -39,6 +39,9 @@
             "I want to change profile to {profile}",
             "I want to change profile with {profile}",
             "I want {profile}",
+            "choose {profile}",
+            "select {profile}",
+            "want {profile}",
             "{profile}"
           ]
         },
@@ -58,6 +61,9 @@
             "I want to change dog to {dog}",
             "I want to change dog with {dog}",
             "I want {dog}",
+            "choose {dog}",
+            "select {dog}",
+            "want {dog}",
             "{dog}"
           ]
         },
@@ -254,5 +260,5 @@
       ]
     }
   },
-  "version": "15"
+  "version": "16"
 }

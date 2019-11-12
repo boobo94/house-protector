@@ -3,7 +3,7 @@ The utterances generated are defined based on the following rules using [this to
 # changeProfileIntent
 
 {profile}
-I (want/choose/select) {profile}
+(/I) (want/choose/select) {profile}
 I (/want to) change profile (with/to) {profile}
 
 # configProfileConfirmationIntent
@@ -16,7 +16,7 @@ tell me (about/which is) my (profile/room)
 # changeDogIntent
 
 {dog}
-I (want/choose/select) {dog}
+(/I) (want/choose/select) {dog}
 I (/want to) change dog (with/to) {dog}
 
 # configDogConfirmationIntent
