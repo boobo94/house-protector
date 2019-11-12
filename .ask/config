@@ -8,8 +8,7 @@
           "apis": {
             "custom": {
               "endpoint": {
-                "uri": "arn:aws:lambda:eu-west-1:301023501224:function:house-protector",
-
+                "uri": "arn:aws:lambda:eu-west-1:301023501224:function:house-protector"
               }
             }
           },
@@ -32,18 +31,17 @@
             "awsRegion": "eu-west-1",
             "functionName": "house-protector",
             "handler": "index.handler",
-            "runtime": "nodejs8.10"
+            "runtime": "nodejs8.10",
+            "revisionId": "72256560-8453-4d07-a237-23fd53660933"
           }
         ],
-        "manifest": {
-          "eTag": "0182b00b308b5f226859fa31d886b309"
-        },
+        "manifest": {},
         "interactionModel": {
           "en-US": {
-            "eTag": "bbb84b181fbe9427148cc57a3993477a"
+            "eTag": "ab7ace992045debc0a62328ba2d3252c"
           }
         }
       }
-    },
+    }
   }
 }

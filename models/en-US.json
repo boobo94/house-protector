@@ -32,6 +32,16 @@
             }
           ],
           "samples": [
+            "I change profile to {profile}",
+            "I change profile with {profile}",
+            "I choose {profile}",
+            "I select {profile}",
+            "I want to change profile to {profile}",
+            "I want to change profile with {profile}",
+            "I want {profile}",
+            "choose {profile}",
+            "select {profile}",
+            "want {profile}",
             "{profile}"
           ]
         },
@@ -44,6 +54,16 @@
             }
           ],
           "samples": [
+            "I change dog to {dog}",
+            "I change dog with {dog}",
+            "I choose {dog}",
+            "I select {dog}",
+            "I want to change dog to {dog}",
+            "I want to change dog with {dog}",
+            "I want {dog}",
+            "choose {dog}",
+            "select {dog}",
+            "want {dog}",
             "{dog}"
           ]
         },
@@ -51,26 +71,132 @@
           "name": "protectIntent",
           "slots": [],
           "samples": [
-            "guard mode",
-            "protect",
-            "protect my house"
+            "activate defense mode",
+            "activate guard mode",
+            "activate protect mode",
+            "defense bedroom",
+            "defense home",
+            "defense house",
+            "defense kitchen",
+            "defense living room",
+            "defense my bedroom",
+            "defense my home",
+            "defense my house",
+            "defense my kitchen",
+            "defense my living room",
+            "guard bedroom",
+            "guard home",
+            "guard house",
+            "guard kitchen",
+            "guard living room",
+            "guard my bedroom",
+            "guard my home",
+            "guard my house",
+            "guard my kitchen",
+            "guard my living room",
+            "open defense mode",
+            "open guard mode",
+            "open protect mode",
+            "protect bedroom",
+            "protect home",
+            "protect house",
+            "protect kitchen",
+            "protect living room",
+            "protect my bedroom",
+            "protect my home",
+            "protect my house",
+            "protect my kitchen",
+            "protect my living room",
+            "start defense mode",
+            "start guard mode",
+            "start protect mode"
           ]
         },
         {
           "name": "configDogConfirmationIntent",
           "slots": [],
           "samples": [
+            "I want to know my active dog",
+            "I want to know my current dog",
+            "I want to know my dog",
+            "I want to know my favorite dog",
+            "I want to know which is my active dog",
+            "I want to know which is my current dog",
+            "I want to know which is my dog",
+            "I want to know which is my favorite dog",
+            "active dog",
+            "current dog",
+            "dog",
+            "favorite dog",
+            "my active dog",
+            "my current dog",
             "my dog",
-            "change dog"
+            "my favorite dog",
+            "which is my active dog",
+            "which is my current dog",
+            "which is my dog",
+            "which is my favorite dog",
+            "tell me about my dog",
+            "tell me which is my dog"
           ]
         },
         {
           "name": "configProfileConfirmationIntent",
           "slots": [],
           "samples": [
+            "I want to know my active profile",
+            "I want to know my active room",
+            "I want to know my current profile",
+            "I want to know my current room",
+            "I want to know my favorite profile",
+            "I want to know my favorite room",
+            "I want to know my profile",
+            "I want to know my room",
+            "I want to know which is my active profile",
+            "I want to know which is my active room",
+            "I want to know which is my current profile",
+            "I want to know which is my current room",
+            "I want to know which is my favorite profile",
+            "I want to know which is my favorite room",
+            "I want to know which is my profile",
+            "I want to know which is my room",
+            "active profile",
+            "active room",
+            "current profile",
+            "current room",
+            "favorite profile",
+            "favorite room",
+            "my active profile",
+            "my active room",
+            "my current profile",
+            "my current room",
+            "my favorite profile",
+            "my favorite room",
             "my profile",
-            "change profile"
+            "my room",
+            "profile",
+            "room",
+            "which is my active profile",
+            "which is my active room",
+            "which is my current profile",
+            "which is my current room",
+            "which is my favorite profile",
+            "which is my favorite room",
+            "which is my profile",
+            "which is my room",
+            "tell me about my profile",
+            "tell me about my room",
+            "tell me which is my profile",
+            "tell me which is my room"
           ]
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
         }
       ],
       "types": [
@@ -134,5 +260,5 @@
       ]
     }
   },
-  "version": "6"
+  "version": "16"
 }

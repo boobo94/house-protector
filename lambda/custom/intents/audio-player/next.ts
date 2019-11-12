@@ -18,6 +18,6 @@ export const NextIntentHandler: RequestHandler = {
   async handle(handlerInput) {
     const persistentAttributes = await GetPersistentAttributes(handlerInput);
 
-    return AudioSkillController.playNext(handlerInput, persistentAttributes);
+    return AudioSkillController.playImmediately(handlerInput, persistentAttributes);
   }
 }
