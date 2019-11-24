@@ -32,13 +32,27 @@
             "functionName": "house-protector",
             "handler": "index.handler",
             "runtime": "nodejs8.10",
-            "revisionId": "72256560-8453-4d07-a237-23fd53660933"
+            "revisionId": "bd93be36-94e4-4371-bcae-5129d19f7ff7"
           }
         ],
-        "manifest": {},
+        "manifest": {
+          "eTag": "1433e31d5a6d6388e1f8f253812fab54"
+        },
         "interactionModel": {
           "en-US": {
-            "eTag": "ab7ace992045debc0a62328ba2d3252c"
+            "eTag": "e13cfdb7723bb0ab383f5a456ca76a3f"
+          },
+          "en-CA": {
+            "eTag": "a6cbdf96f119ed00d96e43792446ec32"
+          },
+          "en-IN": {
+            "eTag": "108938c1d6b921fa458fc254082a4677"
+          },
+          "en-AU": {
+            "eTag": "37e4b1f8abeb75f41b31815fe2ce3ead"
+          },
+          "en-GB": {
+            "eTag": "363e415b6958e8d17a1458f59b1706cf"
           }
         }
       }

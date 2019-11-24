@@ -49,7 +49,11 @@ gulp.task("models", function (done) {
   }
 
   const Locales = {
-    enUS: "en-US"
+    enUS: "en-US",
+    enCA: "en-CA",
+    enIN: "en-IN",
+    enAU: "en-AU",
+    enGB: "en-GB",
   };
 
   const Environments = {
@@ -60,9 +64,17 @@ gulp.task("models", function (done) {
   const invocations = {
     [Environments.Dev]: {
       [Locales.enUS]: "house protector",
+      [Locales.enCA]: "house protector",
+      [Locales.enIN]: "house protector",
+      [Locales.enAU]: "house protector",
+      [Locales.enGB]: "house protector",
     },
     [Environments.Prod]: {
       [Locales.enUS]: "house protector",
+      [Locales.enCA]: "house protector",
+      [Locales.enIN]: "house protector",
+      [Locales.enAU]: "house protector",
+      [Locales.enGB]: "house protector",
     },
   };
 
@@ -83,12 +95,24 @@ gulp.task("models", function (done) {
 
   // read the models
   const enUSModel = readModel(Locales.enUS);
+  const enCAModel = readModel(Locales.enCA);
+  const enINModel = readModel(Locales.enIN);
+  const enAUModel = readModel(Locales.enAU);
+  const enGBModel = readModel(Locales.enGB);
 
   // set the invocation names
   enUSModel.interactionModel.languageModel.invocationName = invocations[env][Locales.enUS];
+  enCAModel.interactionModel.languageModel.invocationName = invocations[env][Locales.enCA];
+  enINModel.interactionModel.languageModel.invocationName = invocations[env][Locales.enIN];
+  enAUModel.interactionModel.languageModel.invocationName = invocations[env][Locales.enAU];
+  enGBModel.interactionModel.languageModel.invocationName = invocations[env][Locales.enGB];
 
   // write the model to the file
   writeModel(enUSModel, Locales.enUS);
+  writeModel(enCAModel, Locales.enCA);
+  writeModel(enINModel, Locales.enIN);
+  writeModel(enAUModel, Locales.enAU);
+  writeModel(enGBModel, Locales.enGB);
 
   done();
 });
